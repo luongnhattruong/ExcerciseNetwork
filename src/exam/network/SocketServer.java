@@ -15,7 +15,7 @@ public class SocketServer{
     public void execute() {
         try (ServerSocket serverSocket = new ServerSocket(this.port)) {
 
-            System.out.println("Chat Server is listening on port " + this.port);
+            System.out.println("Server is listening on port " + this.port);
 
             while (true) {
                 Socket socket = serverSocket.accept();
