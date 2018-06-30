@@ -1,4 +1,4 @@
-package exam.network;
+package exam.network.common;
 
 /**
  * Created by john on 6/29/18.

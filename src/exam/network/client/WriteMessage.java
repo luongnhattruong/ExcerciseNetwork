@@ -1,4 +1,4 @@
-package exam.network;
+package exam.network.client;
 
 import java.io.*;
 import java.net.Socket;

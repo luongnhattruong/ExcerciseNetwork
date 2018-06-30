@@ -1,4 +1,6 @@
-package exam.network;
+package exam.network.server;
+
+import exam.network.common.Contants;
 
 import java.io.*;
 import java.net.Socket;

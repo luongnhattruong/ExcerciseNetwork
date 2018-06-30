@@ -1,8 +1,10 @@
-package exam.network;
+package exam.network.server;
 
 /**
  * Created by john on 6/29/18.
  */
+import exam.network.common.Contants;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
