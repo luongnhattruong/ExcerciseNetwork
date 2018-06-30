@@ -17,7 +17,7 @@ public class SocketClient {
     public SocketClient(String hostname, int port) {
         try {
             this.socket = new Socket(hostname, port);
-            System.out.println("Connected to the chat server");
+            System.out.println("Connected to the server");
             this.read = new ReadMessage(socket);
             this.write = new WriteMessage(socket, this);
         }catch (UnknownHostException ex) {
