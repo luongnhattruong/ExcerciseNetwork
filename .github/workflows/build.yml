@@ -11,6 +11,8 @@ jobs:
           java-version: 1.8
       - name: Test
         run: |
-          echo "${{ secrets.GCP_P12_KEYFILE }}"
-          echo "${{ secrets.GCP_JSON_KEYFILE }}"
+          echo "${{ secrets.GCP_P12_KEYFILE }}" > aaa
+          echo "${{ secrets.GCP_JSON_KEYFILE }}" > bbb
           ls -al
+          cat aaa
+          cat bbb
