@@ -10,8 +10,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Test
-        run:
-          pwd
-          echo "${{ secrets.GCP_P12_KEYFILE }}" > key.p12
-          echo "${{ secrets.GCP_JSON_KEYFILE }}" > key.json
+        run: |
+          echo "${{ secrets.GCP_P12_KEYFILE }}"
+          echo "${{ secrets.GCP_JSON_KEYFILE }}"
           ls -al
