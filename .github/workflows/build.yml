@@ -10,9 +10,9 @@ jobs:
         with:
           java-version: 1.8
       - name: Test
+        env:
+          GCP_P12_KEYFILE: "${{ secrets.GCP_P12_KEYFILE }}"
+          GCP_JSON_KEYFILE: "${{ secrets.GCP_JSON_KEYFILE }}"
         run: |
-          echo "${{ secrets.GCP_P12_KEYFILE }}" > aaa
-          echo "${{ secrets.GCP_JSON_KEYFILE }}" > bbb
-          ls -al
-          cat aaa
-          cat bbb
+          echo "$GCP_P12_KEYFILE"
+          echo "$GCP_JSON_KEYFILE"
